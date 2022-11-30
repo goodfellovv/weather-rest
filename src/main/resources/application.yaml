@@ -1,0 +1,16 @@
+server:
+  port: 8080
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  cache:
+    type: redis
+  redis:
+    host: localhost
+    port: 6379
+
+weather:
+  api:
+    key: c4ccfa07e4d6e24041c12c94a9c05b03
+    url: http://api.openweathermap.org/data/2.5/weather
